@@ -2420,10 +2420,10 @@ electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.47:
   resolved "http://r.cnpmjs.org/electron-to-chromium/download/electron-to-chromium-1.3.243.tgz#32f64f00fa121532d1d49f5c0a15fd77f52ae889"
   integrity sha1-MvZPAPoSFTLR1J9cChX9d/Uq6Ik=
 
-element-ui@2.4.11:
-  version "2.4.11"
-  resolved "http://r.cnpmjs.org/element-ui/download/element-ui-2.4.11.tgz#db6a2d37001b8fe5fff9f176fb58bb3908cfa9c9"
-  integrity sha1-22otNwAbj+X/+fF2+1i7OQjPqck=
+element-ui@^2.4.11:
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/element-ui/-/element-ui-2.12.0.tgz#a893bc11ae4f7dbb7e9d541606f23e643f131ee4"
+  integrity sha512-DapyT0PW4i/1ETPHk8K8Qbe8B6hj10+dXsRTrOTFryV9wAs6e9mCxbV65awokyR2/v/KuIHJmqX+mH3wUa4rOQ==
   dependencies:
     async-validator "~1.8.1"
     babel-helper-vue-jsx-merge-props "^2.0.0"
@@ -6895,9 +6895,9 @@ uuid@^3.3.2:
   integrity sha1-RWjwIW54dg7h2/Ok0s9T4iQRKGY=
 
 v-element-table-header@^1.0.6:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/v-element-table-header/-/v-element-table-header-1.1.0.tgz#d17b499c98a0dc16c9adae73defab87d561be3f7"
-  integrity sha512-tZDet4VZJbyRNjrfCIt1Le40eKsoNCaQ5+SDPB2fEJkfoLkvddXRW/okWvVCP+syC86Ywhdv8jdGmziDr3Q6gA==
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/v-element-table-header/-/v-element-table-header-1.1.3.tgz#30d48de9c471420e85bce39596894dd55f5aa61c"
+  integrity sha512-SYEL0AP2V6+hpPbrGrLJ5w328JbYwn5ZXbxQMVLJ+b33gq9E8piX5OWeX5OHeArCQOr7Ahc+yr+5LevPTF/i1w==
   dependencies:
     resize-observer-polyfill "^1.5.1"
 
@@ -6982,10 +6982,10 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "http://r.cnpmjs.org/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha1-HuO8mhbsv1EYvjNLsV+cRvgvWCU=
 
-vue@2.5.16:
-  version "2.5.16"
-  resolved "http://r.cnpmjs.org/vue/download/vue-2.5.16.tgz#07edb75e8412aaeed871ebafa99f4672584a0085"
-  integrity sha1-B+23XoQSqu7YceuvqZ9GclhKAIU=
+vue@^2.5.16:
+  version "2.6.10"
+  resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
+  integrity sha512-ImThpeNU9HbdZL3utgMCq0oiMzAkt1mcgy3/E6zWC/G6AaQoeuFdsl9nDhTDU3X1R6FK7nsIUuRACVcjI+A2GQ==
 
 watchpack@^1.6.0:
   version "1.6.0"

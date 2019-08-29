@@ -22,12 +22,12 @@
       <el-table-column
         prop="province"
         label="省份"
-        minWidth="130">
+        minWidth="300">
       </el-table-column>
       <el-table-column
         prop="city"
         label="市区"
-        minWidth="150">
+        minWidth="300">
       </el-table-column>
       <el-table-column
         prop="address"
@@ -42,7 +42,7 @@
       <el-table-column
         fixed="right"
         label="操作"
-        minWidth="100">
+        width="400">
         <template slot-scope="scope">
           <el-button @click="handleClick(scope.row)" type="text" size="small">查看</el-button>
           <el-button type="text" size="small">编辑</el-button>

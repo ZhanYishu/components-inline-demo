@@ -3,6 +3,7 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import vElementTableHeader from 'v-element-table-header'
 import 'v-element-table-header/lib/main.css'
+import '../../styles/index.scss'
 import App from './app.vue'
 
 Vue.use(ElementUI)
