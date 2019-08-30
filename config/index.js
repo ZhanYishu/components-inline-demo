@@ -15,7 +15,7 @@ module.exports = {
     }
   },
   prod: {
-    publicPath: '/',
+    publicPath: '/components-inline-demo/',
     // 打包文件根路径
     assetsRoot: path.resolve(__dirname, '../dist'),
     // 是否打开模块分析器
