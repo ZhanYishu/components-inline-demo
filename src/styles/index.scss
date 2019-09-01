@@ -4,3 +4,14 @@ body, html {
 body {
   margin: 0;
 }
+
+//.el-table__header {
+//  background-color: grlightslategray;
+//}
+
+.self-table-header {
+  th, tr {
+    background-color: gainsboro;
+    color: black;
+  }
+}

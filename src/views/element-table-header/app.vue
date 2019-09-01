@@ -1,163 +1,73 @@
 <template>
-  <div style="position: relative">
-    <el-table
-      v-for="key of tableKeys"
-      :key="key"
-      :data="tableData"
-      border
-      v-element-table-header
-      style="minWidth: 100%; margin-bottom: 50px"
-    >
-      <el-table-column
-        fixed
-        prop="date"
-        label="日期"
-        minWidth="180">
-      </el-table-column>
-      <el-table-column
-        prop="name"
-        label="姓名"
-        minWidth="100">
-      </el-table-column>
-      <el-table-column
-        prop="province"
-        label="省份"
-        minWidth="300">
-      </el-table-column>
-      <el-table-column
-        prop="city"
-        label="市区"
-        minWidth="300">
-      </el-table-column>
-      <el-table-column
-        prop="address"
-        label="地址"
-        minWidth="300">
-      </el-table-column>
-      <el-table-column
-        prop="zip"
-        label="邮编"
-        minWidth="180">
-      </el-table-column>
-      <el-table-column
-        fixed="right"
-        label="操作"
-        width="400">
-        <template slot-scope="scope">
-          <el-button @click="handleClick(scope.row)" type="text" size="small">查看</el-button>
-          <el-button type="text" size="small">编辑</el-button>
-        </template>
-      </el-table-column>
-    </el-table>
+  <div class="wrap">
+    <div class="left">
+      <div class="header">模拟 window scroll</div>
+      <table-component></table-component>
+    </div>
+    <div class="right">
+      <div class="header">
+        element scroll
+      </div>
+      <div class="content">
+        <table-component></table-component>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import TableComponent from './components/index.vue'
 export default {
   name: 'APP',
 
-  methods: {
-    handleClick ( row ) {
-      console.log( row )
-    }
+  components: {
+    TableComponent
   },
 
   data () {
     return {
-      tableKeys: ['11', '22', '33', '44'],
-      tableData: [{
-        date: '2016-05-03',
-        name: '王小虎',
-        province: '上海',
-        city: '普陀区',
-        address: '上海市普陀区金沙江路 1518 弄',
-        zip: 200333
-      }, {
-        date: '2016-05-02',
-        name: '王小虎',
-        province: '上海',
-        city: '普陀区',
-        address: '上海市普陀区金沙江路 1518 弄',
-        zip: 200333
-      }, {
-        date: '2016-05-04',
-        name: '王小虎',
-        province: '上海',
-        city: '普陀区',
-        address: '上海市普陀区金沙江路 1518 弄',
-        zip: 200333
-      }, {
-        date: '2016-05-01',
-        name: '王小虎',
-        province: '上海',
-        city: '普陀区',
-        address: '上海市普陀区金沙江路 1518 弄',
-        zip: 200333
-      }, {
-        date: '2016-05-02',
-        name: '王小虎',
-        province: '上海',
-        city: '普陀区',
-        address: '上海市普陀区金沙江路 1518 弄',
-        zip: 200333
-      }, {
-        date: '2016-05-04',
-        name: '王小虎',
-        province: '上海',
-        city: '普陀区',
-        address: '上海市普陀区金沙江路 1518 弄',
-        zip: 200333
-      }, {
-        date: '2016-05-01',
-        name: '王小虎',
-        province: '上海',
-        city: '普陀区',
-        address: '上海市普陀区金沙江路 1518 弄',
-        zip: 200333
-      }, {
-        date: '2016-05-02',
-        name: '王小虎',
-        province: '上海',
-        city: '普陀区',
-        address: '上海市普陀区金沙江路 1518 弄',
-        zip: 200333
-      }, {
-        date: '2016-05-04',
-        name: '王小虎',
-        province: '上海',
-        city: '普陀区',
-        address: '上海市普陀区金沙江路 1518 弄',
-        zip: 200333
-      }, {
-        date: '2016-05-01',
-        name: '王小虎',
-        province: '上海',
-        city: '普陀区',
-        address: '上海市普陀区金沙江路 1518 弄',
-        zip: 200333
-      }, {
-        date: '2016-05-02',
-        name: '王小虎',
-        province: '上海',
-        city: '普陀区',
-        address: '上海市普陀区金沙江路 1518 弄',
-        zip: 200333
-      }, {
-        date: '2016-05-04',
-        name: '王小虎',
-        province: '上海',
-        city: '普陀区',
-        address: '上海市普陀区金沙江路 1518 弄',
-        zip: 200333
-      }, {
-        date: '2016-05-01',
-        name: '王小虎',
-        province: '上海',
-        city: '普陀区',
-        address: '上海市普陀区金沙江路 1518 弄',
-        zip: 200333
-      }]
+
     }
   }
 }
 </script>
+<style lang="scss" scoped>
+  .wrap {
+    height: 100%;
+    display: flex;
+  }
+
+  .left, .right  {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+  }
+
+  .header {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .left {
+    overflow: scroll;
+
+    .header {
+      height: 200px;
+      line-height: 200px;
+      background-color: yellow;
+    }
+  }
+
+  .right {
+    .header {
+      background: darkseagreen;
+      height: 100px;
+      line-height: 100px;
+    }
+
+    .content {
+      height: calc(100% - 100px);
+      overflow: scroll;
+    }
+  }
+</style>
