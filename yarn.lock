@@ -6945,6 +6945,13 @@ vue-eslint-parser@^5.0.0:
     esquery "^1.0.1"
     lodash "^4.17.11"
 
+vue-fixed-overflow@^1.2.1:
+  version "1.2.1"
+  resolved "http://r.cnpmjs.org/vue-fixed-overflow/download/vue-fixed-overflow-1.2.1.tgz#01277b4987d84166df9bcccdca39db88a6556052"
+  integrity sha1-ASd7SYfYQWbfm8zNyjnbiKZVYFI=
+  dependencies:
+    resize-observer-polyfill "^1.5.1"
+
 vue-hot-reload-api@^2.3.0:
   version "2.3.3"
   resolved "http://r.cnpmjs.org/vue-hot-reload-api/download/vue-hot-reload-api-2.3.3.tgz#2756f46cb3258054c5f4723de8ae7e87302a1ccf"
