@@ -13,8 +13,8 @@ export default {}
 <style scoped>
   .content {
     padding: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     text-align: center;
     font-size: 36px;
     color: black;
