@@ -6945,10 +6945,10 @@ vue-eslint-parser@^5.0.0:
     esquery "^1.0.1"
     lodash "^4.17.11"
 
-vue-fixed-overflow@^1.2.1:
-  version "1.2.1"
-  resolved "http://r.cnpmjs.org/vue-fixed-overflow/download/vue-fixed-overflow-1.2.1.tgz#01277b4987d84166df9bcccdca39db88a6556052"
-  integrity sha1-ASd7SYfYQWbfm8zNyjnbiKZVYFI=
+vue-fixed-overflow@^1.2.3:
+  version "1.2.3"
+  resolved "http://r.cnpmjs.org/vue-fixed-overflow/download/vue-fixed-overflow-1.2.3.tgz#20a75b799685c952d6ee7ba170945d78ead209ff"
+  integrity sha1-IKdbeZaFyVLW7nuhcJRdeOrSCf8=
   dependencies:
     resize-observer-polyfill "^1.5.1"
 

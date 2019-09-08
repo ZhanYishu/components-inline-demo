@@ -71,6 +71,6 @@
     "element-ui": "^2.4.11",
     "v-element-table-header": "^1.0.6",
     "vue": "^2.5.16",
-    "vue-fixed-overflow": "^1.2.1"
+    "vue-fixed-overflow": "^1.2.3"
   }
 }
